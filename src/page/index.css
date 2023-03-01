@@ -1,0 +1,132 @@
+@font-face {
+    font-family: BloggerSans;
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas: "sidebar sidebar main main main main main";
+    max-width: 822px;
+    margin: 0 auto;
+    clear: both;
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+#header img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.main {
+    grid-area: main;
+}
+
+#header h1 {
+    color: #0f77ef;
+    font-size: 70px;
+    line-height: 1;
+    margin: 0;
+    margin-top: 24px;
+}
+
+#header h2 {
+    color: #848484;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+    margin-top: 18px;
+}
+
+.social_icons {
+    margin-top: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.social_icons a svg {
+    fill: #848484;
+}
+
+.d-block {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+#main section {
+    margin-bottom: 24px;
+}
+
+#main .section-header {
+    line-height: 1.5;
+    font-size: 24px;
+    color: #2656E8;
+    margin-bottom: 8px;
+}
+
+#main p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+table.content-table {
+    width: 100%;
+}
+
+.no-br {
+    white-space: nowrap;
+}
+
+.text-muted {
+    color: rgb(132, 132, 132);
+}
+
+table.content-table td {
+    vertical-align: top;
+    line-height: 1.5;
+    padding: 6px;
+}
+
+#footer {
+    color: #848484;
+    position: fixed;
+    left: 28%;
+    bottom: 20px;
+    height: 30px;
+    width: 100%;
+}
+
+
+#footer a {
+    color: #848484;
+    text-decoration: underline;
+}
+
+.float-right {
+    float: right;
+}

@@ -29,6 +29,19 @@ body {
     padding: 20px;
 }
 
+.english {
+    display: block;
+}
+
+.russian {
+    display: block;
+' '
+}
+
+.hidden {
+    display: none !important;
+}
+
 .sidebar {
     grid-area: sidebar;
 }
@@ -129,4 +142,17 @@ table.content-table td {
 
 .float-right {
     float: right;
+}
+
+.my_button {
+    margin-left: 350px;
+    margin-top: -20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(132, 132, 132);
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
 }

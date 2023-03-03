@@ -9,7 +9,6 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 }
 
 body {
@@ -20,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 20px;
+    gap: 0 20px;
     grid-template-areas: "sidebar sidebar main main main main main";
     max-width: 822px;
     margin: 0 auto;
@@ -155,4 +154,37 @@ table.content-table td {
     font-size: 16px;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.first {
+    margin-left: 40px;
+}
+
+.second {
+    margin-left: 520px;
+    margin-top: -190px;
+}
+
+.firsth3 {
+    color: #848484;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+.secondh3 {
+    color: #848484;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+}
+
+li {
+    margin-bottom: 10px
+}
+.myli {
+    margin-bottom: 20px;
 }

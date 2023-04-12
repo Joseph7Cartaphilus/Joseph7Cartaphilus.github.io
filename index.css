@@ -12,7 +12,15 @@
 }
 
 body {
-    font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Roboto, system-ui,
+    -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+    background-color: #2A3235;
 }
 
 .container {
@@ -27,6 +35,7 @@ body {
     flex-basis: 100%;
     padding: 20px;
 }
+
 
 .english {
     display: block;
@@ -47,7 +56,7 @@ body {
 
 #header img {
     max-width: 100%;
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 .main {
@@ -55,8 +64,8 @@ body {
 }
 
 #header h1 {
-    color: #0f77ef;
-    font-size: 70px;
+    color: #000000;
+    font-size: 4vw;
     line-height: 1;
     margin: 0;
     margin-top: 24px;
@@ -64,10 +73,20 @@ body {
 
 #header h2 {
     color: #848484;
-    font-size: 24px;
+    font-size: 2.8vw;
     line-height: 1;
     margin: 0;
     margin-top: 18px;
+}
+
+#header h3 {
+    color: #848484;
+    font-size: 2.3vw;
+    line-height: 1;
+}
+
+#header h3:hover {
+    color: #FCFDFD;
 }
 
 .social_icons {
@@ -77,8 +96,102 @@ body {
     align-items: flex-start;
 }
 
+.social_icons svg {
+    width: 3vw;
+    height: auto;
+    vertical-align: middle;
+    fill: #848484;
+}
+
 .social_icons a svg {
     fill: #848484;
+}
+
+.social_icons a:hover svg path {
+    fill: #FCFDFD;
+}
+
+.social_icons h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6vw;
+}
+
+@media (max-width: 320px) {
+    #header h1 {
+        font-size: 2.4rem;
+    }
+
+    #header h2 {
+        font-size: 1.8rem;
+    }
+
+    #header h3 {
+        font-size: 1.6rem;
+    }
+
+    .social_icons svg {
+        width: 3.6rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    #header h1 {
+        font-size: 2.8rem;
+    }
+
+    #header h2 {
+        font-size: 2.2rem;
+    }
+
+    #header h3 {
+        font-size: 1.8rem;
+    }
+
+    .social_icons svg {
+        width: 4.8rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #header h1 {
+        font-size: 3.6rem;
+    }
+
+    #header h2 {
+        font-size: 2.8rem;
+    }
+
+    #header h3 {
+        font-size: 2.4rem;
+    }
+
+    .social_icons svg {
+        width: 4rem;
+    }
+}
+
+@media (min-width: 769px) {
+    #header h1 {
+        font-size: 4rem;
+    }
+
+    #header h2 {
+        font-size: 3.2rem;
+    }
+
+    #header h3 {
+        font-size: 2.8rem;
+    }
+
+    .social_icons svg {
+        width: 4rem;
+    }
+}
+
+.icon {
+    display: flex;
+    gap: 1vh;
 }
 
 .d-block {
@@ -95,8 +208,8 @@ main {
 
 #main .section-header {
     line-height: 1.5;
-    font-size: 24px;
-    color: #2656E8;
+    font-size: 30px;
+    color: #000000;
     margin-bottom: 8px;
 }
 
@@ -106,85 +219,125 @@ main {
     line-height: 1.5;
 }
 
-table.content-table {
-    width: 100%;
+.about {
+    color: #FCFDFD;
+    font-size: 2vh;
 }
 
-.no-br {
+.text {
+    color: #FCFDFD;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skills li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 2vh;
+    color: #FCFDFD;
+    flex-basis: calc(33.33% - 20px);
+}
+
+@media screen and (max-width: 767px) {
+    .skills li {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+.language {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     white-space: nowrap;
 }
 
-.text-muted {
-    color: rgb(132, 132, 132);
+.language ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    white-space: nowrap;
 }
 
-table.content-table td {
-    vertical-align: top;
+
+.language li {
+    margin-right: 20px;
+    margin-bottom: 20px;
     line-height: 1.5;
-    padding: 6px;
+    font-size: 2vh;
+    color: #FCFDFD;
+    flex-basis: 50%;
+}
+
+.work {
+    font-size: 1.4rem;
+    color: #848484;
+}
+
+.work li {
+    color: #FCFDFD;
+    padding: 5px;
+    margin-left: 60px;
+}
+
+.experience {
+    color: #FCFDFD;
+    font-size: 2vh;
 }
 
 #footer {
     color: #848484;
-    position: fixed;
-    left: 28%;
+    position: relative;
     bottom: 20px;
     height: 30px;
     width: 100%;
+    text-align: center;
 }
-
 
 #footer a {
-    color: #848484;
-    text-decoration: underline;
+    color: #FCFDFD;
+    font-size: 2vh;
 }
 
-.float-right {
-    float: right;
-}
-
-.my_button {
-    margin-left: 350px;
-    margin-top: -20px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: rgb(132, 132, 132);
-    border: none;
+.links-container {
     text-align: center;
-    font-size: 16px;
+    margin-top: 50px;
+}
+
+.links-wrapper {
+    display: inline-block;
+}
+
+.links-wrapper a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #848484;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.buttons-wrapper button {
+    background-color: #848484;
+    border: none;
+    color: #FCFDFD;
+    padding: 10px 20px;
+    margin-left: 20px;
     cursor: pointer;
-    text-decoration: underline;
+    font-size: 1.5vh;
 }
 
-.first {
-    margin-left: 40px;
+.buttons-wrapper button:hover {
+    background-color: #666666;
 }
 
-.second {
-    margin-left: 520px;
-    margin-top: -220px;
-}
 
-.firsth3 {
-    color: #848484;
-    margin-left: 90px;
-    margin-bottom: 10px;
-}
 
-.secondh3 {
-    color: #848484;
-    margin-left: 40px;
-    margin-bottom: 10px;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: disc;
-}
 
-li {
-    margin-bottom: 10px
-}
-.myli {
-    margin-bottom: 20px;
-}
